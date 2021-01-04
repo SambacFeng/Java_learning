@@ -52,7 +52,7 @@ public class Sokoban extends Application{
 		
 		Button nextBtn = new Button("Next");
 		nextBtn.setOnAction(e -> {
-			if(currentLevel < mapFiles.size()) {
+			if(currentLevel < mapFiles.size() - 1) {
 				currentLevel++;
 				currentMap.loadMap(mapFiles.get(currentLevel));
 				label.setText("Current Level:" + currentLevel);
